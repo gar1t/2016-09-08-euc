@@ -1,0 +1,163 @@
+#-*-org-*-
+
+* Questions
+
+** Prehistory
+
+- How would you characterize the differences between the AKE system
+  and AXE?
+
+- Bjarne and Mike, it seems like you structured the Lab as a very open
+  ended applied research center. For example, you outlined several
+  separate groups, each dedicated to a language paradigm
+  (e.g. imperative, object oriented, declarative, rules based) Was
+  this the culture supportive of this or was this somewhat a guerrilla
+  effort?
+
+- Bjarne you had some foramtive experience earlier with Lisp. Ericsson
+  had group memory of the problems with pointers. Joe was a physicist
+  and had experience with rockets. What are some of the ideas or
+  influences that weighed heavily as you set out to find a language to
+  improve on PLEX?
+
+** Research and development
+
+- Joe, Chuck Moore, creator of Forth, said that "compilers are
+  probably the worst code ever written. They are written by someone
+  who has never written a compiler before and will never do so again."
+  Yet, the design of your original abstract machine, the JAM, survives
+  in large part as the BEAM today. How the hell did you do that?
+
+  - What advice would you have for programmers who might not think
+    they have it in them to create something new?
+
+- Bjarne, in Joe's history of Erlang, he says you told him to "solve
+  Ericsson's software problem" - two parts to my question, 1) did you
+  hedge by telling the same thing to the OO and imperative teams, or
+  did you already know the rules based camp would win and 2) when did
+  you start to realize that he might actually be pulling it off?
+
+- The ACS/Dunder team was the first adopter of Erlang, even if it was
+  for prototyping. It seems to me that without that usage and input,
+  Erlang may well have never moved beyong its earliest stages. That
+  seems very generous and a little risky. Was that purely organic or
+  was there some executive prompting/influence along the way?
+
+  - What does that say about the risk of creating new technology? If
+    companies want to create break throughts, what sort of risk should
+    management be willing to take, and invest in?
+
+- Why did Philip Wadler attempt to turn Erlang into ML fail?
+
+  - How does know why this didn't work impact your desire to use say
+    Haskell or ML on a project?
+
+- Joe, Mike, and Robert, in the history of Erlang you experimented
+  with new features and users didn't like it, you pulled it. Were
+  there any features that any of really really liked, but didn't make
+  it into Erlang because some /user/?
+
+- Robert, your first rule of programming is, "Any sufficiently
+  complicated concurrent program in another language contains an ad
+  hoc informally-specified bug-ridden slow implementation of half of
+  Erlang." Seriously, what's so hard about "concurrency"?
+
+- What sacrifice did you end up making in the system design that you'd
+  like to either go back in time and reverse or conceded that it was
+  still the right decision, but you'd like to fix some things?
+
+** Erlang in the wild
+
+*** Erlang's exodus
+
+- Jane, when you first encountered Erlang - and this could be the
+  language, a train set, Joe, Robert, or Mike - what was that and what
+  were you first impressions?
+
+- Jane you bring a perspective that is hard to come by in Erlang
+  developer circles as you have interface with those who are seeing
+  this technology for the first time and being asked to make some very
+  important strategic decisions in possibly adopting it as a core
+  technology. What's been the most challenging part of those
+  discussions?
+
+- Mike, you stayed at Ericsson when Bluetail was started. Was that a
+  hard decision?
+
+*** Adoption
+
+- Here's a short list of some companies, you may have heard of some:
+  IBM, Visa, BT Mobile, Chef, Heroku, Basho, Pivotal, WhatsApp. Each
+  company uses Erlang in variying degrees - for some it's a small line
+  of business, for others it's core to their business.
+
+  Let me now read off the ten requirements that were outlined going
+  into Erlang's research and development:
+
+  1. Handling a very large number of concurrent activities
+
+  2. Actions to be performed at a certain point of time or within a
+     certain time
+
+  3. Systems distributed over several computers
+
+  4. Interaction with hardware
+
+  5. Very large software systems
+
+  6. Complex functionality such as feature interaction
+
+  7. Continuous operation over several years
+
+  8. Software maintenance (reconfiguration, etc.) without stopping the
+     system
+
+  9. Stringent quality and reliability requirements
+
+  10. Fault tolerance both to hardware failures and software errors
+
+  Super softball question. After 30 years now, looking at how Erlang
+  is used, within Ericsson and without, are you all comfortable saying
+  "missing accopmlished?"
+
+- <quick summary of Elixir's progress vis-a-vis Erlang> "Does the rate
+  at which Elixir is improving and attracting new programmers bother
+  you - and if you could, would you try to influence improvements in
+  Erlang, or just all become Elixir programmers?"
+
+- Robert, why is Erlang the only production quality language/VM that
+  isolates processes (like all of our operating systems)?
+
+  - What's been hard in your experience about getting certain groups
+    interested in Erlang's process model as a mode of programming?
+
+** The future
+
+- JavaScript - within the last couple years it's become the known
+  universe's most popular language. It was designed in 10 days. Erlang
+  was designed over 10 years. Do you guys feel you put too much effort
+  into this?
+
+  - Has software and the general purpose hardware it runs on
+    outstripped most computing problems? Have we entered an era where
+    programming is the equivalent of 18th century European
+    aristocracy? We all just sit around playing croquet?
+
+- Go is a very popular language. It's often cited as a viable
+  replacement for Erlang. Go has pointers. AKE had pointers. Are we
+  going in circles?
+
+- Let's assume for a moment, just for argument sake, that Erlang has
+  been banned from polite society, for whatever reason -- it's syntax
+  is horrible, you can't easily reorder lines, it hates state,
+  etc. etc. -- in all seriousness, imagine it -- what would you
+  recommend someone use who should otherwise use Erlang, if it wasn't
+  banned from polite society?
+
+- Advice for a new programmer who wants to work on actual hard
+  problems and be excellent at it.
+
+* Where to Put - To Do
+
+- Questions for Mike - maybe incorporate him into the future
+  discussion based on his longer view of lots of languages
