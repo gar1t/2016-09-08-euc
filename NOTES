@@ -6,8 +6,7 @@
 
 - Let's go around in order and introduce ourselves. Please state your
   name, your role in the development of Erlang, and whether you're a
-  dog person, cat person, or a ferrot person.
-
+  dog person, cat person, or an other person - if other, what?
 
 ** Prehistory
 
@@ -39,13 +38,22 @@
 
 ** Research and development
 
+*** Solve Ericsson's software problem
+
+- Bjarne, Joe recounts that your marching orders to him were to "solve
+  Ericsson's software problem". Could you describe some of those
+  problems? What were asking of Joe there?
+
+  - At what point did you start to think he and the others in the Lab
+    might actually pull it off?
+
 *** JAM
 
 - Joe, Chuck Moore, creator of Forth, said that "compilers are
   probably the worst code ever written. They are written by someone
   who has never written a compiler before and will never do so again."
-  Yet, the design of your original abstract machine, the JAM, survives
-  in large part as the BEAM today. How the hell did you do that?
+  The design of your original abstract machine, the JAM, survives in
+  large part as the BEAM today. How the hell did you do that?
 
   - What advice would you have for programmers who might not think
     they have it in them to create something new?
@@ -59,15 +67,20 @@
   : another language contains an ad hoc informally-specified bug-ridden
   : slow implementation of half of Erlang.
 
-  Seriously, what's so hard about "concurrency"?
+  A lot of people might just think you're being clever there. For the
+  record, what makes concurrency so hard?
 
 *** A type system
 
-- Why did Philip Wadler's attempt to turn Erlang into ML fail
-  completely?
+- Philip Wadler enters the ecosystem and works on a type system for
+  Erlang. By some measure he fails, but does succeed in creating a
+  type specification, which in turn enables dialyzer and other tooling
+  that use type information. What makes Erlang resistant to being a
+  statically typed language?
 
-  - How does know why this didn't work impact your desire to use say
-    Haskell or ML on a project?
+  - Does this <quality of Erlang> contribute to your approaches to
+    statically vs dynamically typed languages? Robert, I've heard you
+    say at times that you're not a type person.
 
 *** Features that never made it
 
@@ -76,21 +89,22 @@
   there any features that any of really really liked, but didn't make
   it into Erlang because some /user/?
 
-
 ** Erlang in the wild
 
-*** Jane's first impression
+*** Open sourcing Erlang
 
-- Jane, when you first encountered Erlang - and this could be the
-  language, a train set, Joe, Robert, or Mike - what was that and what
-  were you first impressions?
+- Jane, if it wasn't for your involvement in getting Erlang open
+  sources, we wouldn't be here today. Could you tell us that story?
+
+  - How close was this decision? Was it an easy sell, or was it a real
+    posibility that Erlang would have been kept closed?
 
 *** Difficulty of selling Erlang
 
 - Jane you bring a perspective that is hard to come by in Erlang
   developer circles as you have interface with those who are seeing
-  this technology for the first time and being asked to make some very
-  important strategic decisions in possibly adopting it as a core
+  this technology for the first time and being asked to make some
+  important strategic decisions in adopting it as a core
   technology. What's been the most challenging part of those
   discussions?
 
@@ -136,9 +150,10 @@
 *** Elixir
 
 - Elixir... This is a new language, similar to Erlang semantically but
-  with some novel innovations like macros and function piping. Apart
-  from it's kinder and gentler syntax - so some say - people are
-  attracted to Elixir's now outstanding toolchain and documentation:
+  with some novel innovations like macros and function call
+  piping. Apart from it's kinder and gentler syntax - so some say -
+  people are attracted to Elixir's now outstanding toolchain and
+  documentation...
 
   Mix for building, Distillery for deployment, ExUnit for testing,
   getting started guides that focus on developer understanding and
@@ -149,27 +164,27 @@
   Driving this community is a small, distributed, ad hocly financed
   team of very talented enthusiasts.
 
-  What can we learn about the effectiveness of community there - and
+  What can we learn about the effectiveness of community here - and
   how could elements of that model be applied to Erlang's development,
   which is still largely driven by a single organization.
+
+** The future
 
 *** The only people in the world concerned with software failure
 
 - Joe, Robert and Mike, in 1989 at the SETSS conference you trolled
-  people relentlessly by asking the same question, "what happens if it
-  fails?" The answer was "we assume it won't". After this you realized
-  that you were the only people in the world designing systems that
-  could recover from software failures.
+  other presenters relentlessly by asking the question, "what happens
+  if it fails?" The answer was "our model assumes it won't". After
+  this you realized that you were the only people in the world
+  designing systems that could recover from software failures.
 
-  Even today, systems are built to guard against hardware failures.
+  It seems not much has changed. Today, systems are built to guard
+  against hardware failures.
 
   This seems to me the dividing line between Erlang and everything
   else, even today.
 
   My question is this, why hasn't this idea caught on?
-
-
-** The future
 
 *** What in Erlang needs revision?
 
