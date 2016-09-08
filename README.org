@@ -1,5 +1,3 @@
-# -*-org-*-
-
 * Questions
 
 **** Opener
