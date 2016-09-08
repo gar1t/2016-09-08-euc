@@ -6,9 +6,11 @@
   name, your role in the development of Erlang, and whether you're a
   dog person, cat person, or an other person - if other, what?
 
+
 ** Prehistory
 
-*** Lessons learned from AKE/AXE
+
+*** Lessons learned from AKE/AXE (Ericsson DNA)
 
 - When you started Erlang in 1985, you had some pretty specific
   targets to go after in PLEX. E.g. handling a very large number of
@@ -25,7 +27,7 @@
   that eliminated the use of pointers and corrected many of the errors
   in the AKE."
 
-*** Prior experiences that influenced research into Erlang
+*** Prior experiences that influenced research into Erlang (Lab DNA)
 
 - Bjarne you had some foramtive experience earlier with Lisp. Ericsson
   had seen great improvements in AXE over AKE. Joe was a physicist and
@@ -35,6 +37,7 @@
 
 
 ** Research and development
+
 
 *** Solve Ericsson's software problem
 
@@ -87,7 +90,9 @@
   there any features that any of really really liked, but didn't make
   it into Erlang because some /user/?
 
+
 ** Erlang in the wild
+
 
 *** Open sourcing Erlang
 
@@ -166,7 +171,9 @@
   how could elements of that model be applied to Erlang's development,
   which is still largely driven by a single organization.
 
+
 ** The future
+
 
 *** The only people in the world concerned with software failure
 
@@ -184,11 +191,9 @@
 
   My question is this, why hasn't this idea caught on?
 
-*** What in Erlang needs revision?
+*** What's exciting
 
-- What sacrifice did you end up making in the system design that you'd
-  like to either go back in time and reverse or conceded that it was
-  still the right decision, but you'd like to fix something?
+- Looking at technology today, what's most exciting to you?
 
 *** Advice to learners
 
