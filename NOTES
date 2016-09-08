@@ -8,11 +8,20 @@
   name, your role in the development of Erlang, and whether you're a
   dog person, cat person, or a ferrot person.
 
+
 ** Prehistory
 
 **** Lessons learned from AXE
 
-- When you started Erlang in 198
+- When you started Erlang in 1985, you had some pretty specific
+  targets to go after in PLEX. E.g. handling a very large number of
+  concurrent activities, soft real time performance, distribution,
+  continuous operations, and so on.
+
+  This question may be to Bjarne and Mike, but anyone feel free to
+  contribute - what were some fundamental lessons learned from AKE -
+  this is the precursor of AXE/PLEX - that were codified in the
+  Ericsson engineering mindset in 1985.
 
   E.g. one observation in Joe's history of Erlang was "The design of
   AXE and PLEX used a mixture of hardware protection and data copying
@@ -22,20 +31,10 @@
 **** Prior experiences that influenced research into Erlang
 
 - Bjarne you had some foramtive experience earlier with Lisp. Ericsson
-  had group memory of the problems with pointers. Joe was a physicist
-  and had experience with rockets. What are some of the ideas or
+  had seen great improvements in AXE over AKE. Joe was a physicist and
+  had experience with rockets. What are some of the ideas or
   influences that weighed heavily as you set out to find a language to
   improve on PLEX?
-
-**** (block) Lab as guerrilla research?
-
-- Bjarne and Mike, it seems like you structured the Lab as a very
-  open-ended applied research center. For example, you outlined
-  several separate groups, each dedicated to a language paradigm
-  (e.g. imperative, object oriented, declarative, rules based) Was
-  this the culture supportive of this or was this somewhat a guerrilla
-  effort?
-
 
 ** Research and development
 
@@ -57,18 +56,6 @@
   hedge by telling the same thing to the OO and imperative teams, or
   did you already know the rules based camp would win and 2) when did
   you start to realize that he might actually be pulling it off?
-
-**** (block) ACS/Dunder
-
-- The ACS/Dunder team was the first adopter of Erlang, even if it was
-  for prototyping. It seems to me that without that usage and input,
-  Erlang may well have never moved beyong its earliest stages. That
-  seems very generous and a little risky. Was that purely organic or
-  was there some executive prompting/influence along the way?
-
-  - What does that say about the risk of creating new technology? If
-    companies want to create break throughts, what sort of risk should
-    management be willing to take, and invest in?
 
 **** A type system
 
@@ -96,6 +83,7 @@
 
   Seriously, what's so hard about "concurrency"?
 
+
 ** Erlang in the wild
 
 *** Erlang's exodus
@@ -115,7 +103,10 @@
   technology. What's been the most challenging part of those
   discussions?
 
+
 *** Adoption
+
+**** Mission accomplished?
 
 - Here's a short list of some companies - you may have heard of some:
   IBM, VISA, Facebook, BT Mobile, Pivotal, WhatsApp - and a telecom
@@ -161,11 +152,11 @@
   from it's kinder and gentler syntax - so some say - people are
   attracted to Elixir's now outstanding toolchain and documentation:
 
-  Mix for building, Distillery for deployment, getting started guides
-  that focus on developer understanding and productivity, extensive
-  language documentation, and a web framework that - dare I say it -
-  sort of reminds programmers of a very popular web framework for
-  Ruby.
+  Mix for building, Distillery for deployment, ExUnit for testing,
+  getting started guides that focus on developer understanding and
+  productivity, extensive language documentation, and a web framework
+  that - dare I say it - sort of reminds programmers of a very popular
+  web framework for Ruby.
 
   Driving this community is a small, distributed, ad hocly financed
   team of very talented enthusiasts.
@@ -174,13 +165,21 @@
   how could elements of that model be applied to Erlang's development,
   which is still largely driven by a single organization.
 
-**** People still not interested in the Erlang VM
+**** The only people in the world concerned with software failure
 
-- Robert, why is Erlang the only production quality language/VM that
-  isolates processes (like all of our operating systems)?
+- Joe, Robert and Mike, in 1989 at the SETSS conference you trolled
+  people relentlessly by asking the same question, "what happens if it
+  fails?" The answer was "we assume it won't". After this you realized
+  that you were the only people in the world designing systems that
+  could recover from software failures.
 
-  - What's been hard in your experience about getting certain groups
-    interested in Erlang's process model as a mode of programming?
+  Even today, systems are built to guard against hardware failures.
+
+  This seems to me the dividing line between Erlang and everything
+  else, even today.
+
+  My question is this, why hasn't this idea caught on?
+
 
 ** The future
 
@@ -190,31 +189,14 @@
   like to either go back in time and reverse or conceded that it was
   still the right decision, but you'd like to fix something?
 
-**** (block) Is Erlang over designed?
-
-- JavaScript - within the last couple years it's become the known
-  universe's most popular language. It was designed in 10 days. Erlang
-  was designed over 10 years. Do you guys feel you put too much effort
-  into this?
-
-  - Has software and the general purpose hardware it runs on
-    outstripped most computing problems? Have we entered an era where
-    programming is the equivalent of 18th century European
-    aristocracy? We all just sit around playing croquet?
-
-**** (block) Go has pointers
-
-- Go is a very popular language. It's often cited as a viable
-  replacement for Erlang. Go has pointers. AKE had pointers. Are we
-  going in circles?
-
 **** Legitimate alternatives
 
 - Let's assume for a moment, just for argument sake, that Erlang has
   been banned from polite society, for whatever reason -- it's syntax
   is horrible, you can't easily reorder lines, it hates state,
   etc. etc. -- in all seriousness, imagine it -- what would you
-  recommend someone use who should otherwise use Erlang?
+  recommend someone use who should otherwise use Erlang, if it wasn't
+  banned from polite society?
 
 **** Advice to learners
 
