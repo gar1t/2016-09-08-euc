@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>README</title>
-<!-- 2016-09-08 Thu 13:59 -->
+<!-- 2016-09-08 Thu 16:25 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Garrett Smith" />
@@ -142,47 +142,42 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Questions</a>
+<li><a href="#sec-1">1. Opener</a></li>
+<li><a href="#sec-2">2. Prehistory</a>
 <ul>
-<li><a href="#sec-1-1">1.1. Prehistory</a>
-<ul>
-<li><a href="#sec-1-1-1">1.1.1. Lessons learned from AKE/AXE (Ericsson DNA)</a></li>
-<li><a href="#sec-1-1-2">1.1.2. Prior experiences that influenced research into Erlang (Lab DNA)</a></li>
+<li><a href="#sec-2-1">2.1. Lessons learned from AKE/AXE (Ericsson DNA)</a></li>
+<li><a href="#sec-2-2">2.2. Prior experiences that influenced research into Erlang (Lab DNA)</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-2">1.2. Research and development</a>
+<li><a href="#sec-3">3. Research and development</a>
 <ul>
-<li><a href="#sec-1-2-1">1.2.1. Solve Ericsson's software problem</a></li>
-<li><a href="#sec-1-2-2">1.2.2. JAM</a></li>
-<li><a href="#sec-1-2-3">1.2.3. Virdings first rule of programming</a></li>
-<li><a href="#sec-1-2-4">1.2.4. A type system</a></li>
-<li><a href="#sec-1-2-5">1.2.5. Features that never made it</a></li>
+<li><a href="#sec-3-1">3.1. Solve Ericsson's software problem</a></li>
+<li><a href="#sec-3-2">3.2. JAM</a></li>
+<li><a href="#sec-3-3">3.3. Virdings first rule of programming</a></li>
+<li><a href="#sec-3-4">3.4. A type system</a></li>
+<li><a href="#sec-3-5">3.5. Features that never made it</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-3">1.3. Erlang in the wild</a>
+<li><a href="#sec-4">4. Erlang in the wild</a>
 <ul>
-<li><a href="#sec-1-3-1">1.3.1. Open sourcing Erlang</a></li>
-<li><a href="#sec-1-3-2">1.3.2. Difficulty of selling Erlang</a></li>
-<li><a href="#sec-1-3-3">1.3.3. Mission accomplished?</a></li>
-<li><a href="#sec-1-3-4">1.3.4. Elixir</a></li>
+<li><a href="#sec-4-1">4.1. Open sourcing Erlang</a></li>
+<li><a href="#sec-4-2">4.2. Difficulty of selling Erlang</a></li>
+<li><a href="#sec-4-3">4.3. Mission accomplished?</a></li>
+<li><a href="#sec-4-4">4.4. Elixir</a></li>
 </ul>
 </li>
-<li><a href="#sec-1-4">1.4. The future</a>
+<li><a href="#sec-5">5. The future</a>
 <ul>
-<li><a href="#sec-1-4-1">1.4.1. The only people in the world concerned with software failure</a></li>
-<li><a href="#sec-1-4-2">1.4.2. What's exciting</a></li>
-<li><a href="#sec-1-4-3">1.4.3. Advice to learners</a></li>
-</ul>
-</li>
+<li><a href="#sec-5-1">5.1. What's exciting</a></li>
+<li><a href="#sec-5-2">5.2. Advice to learners</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Questions</h2>
+<h2 id="sec-1"><span class="section-number-2">1</span> Opener</h2>
 <div class="outline-text-2" id="text-1">
-</div><ol class="org-ol"><li><a id="sec-1-0-0-1" name="sec-1-0-0-1"></a>Opener<br  /><div class="outline-text-5" id="text-1-0-0-1">
 <ul class="org-ul">
 <li>Let's go around in order and introduce ourselves. Please state your
 name, your role in the development of Erlang, and whether you're a
@@ -190,15 +185,15 @@ dog person, cat person, or an other person - if other, what?
 </li>
 </ul>
 </div>
-</li>
+</div>
 
 
-<div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Prehistory</h3>
-<div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-sec-1-1-1" class="outline-4">
-<h4 id="sec-1-1-1"><span class="section-number-4">1.1.1</span> Lessons learned from AKE/AXE (Ericsson DNA)</h4>
-<div class="outline-text-4" id="text-1-1-1">
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Prehistory</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Lessons learned from AKE/AXE (Ericsson DNA)</h3>
+<div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>When you started Erlang in 1985, you had some pretty specific
 targets to go after in PLEX. E.g. handling a very large number of
@@ -223,9 +218,9 @@ in the AKE."
 </div>
 </div>
 
-<div id="outline-container-sec-1-1-2" class="outline-4">
-<h4 id="sec-1-1-2"><span class="section-number-4">1.1.2</span> Prior experiences that influenced research into Erlang (Lab DNA)</h4>
-<div class="outline-text-4" id="text-1-1-2">
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Prior experiences that influenced research into Erlang (Lab DNA)</h3>
+<div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Bjarne you had some foramtive experience earlier with Lisp. Ericsson
 had seen great improvements in AXE over AKE. Joe was a physicist and
@@ -238,13 +233,12 @@ improve on PLEX?
 </div>
 </div>
 
-
-<div id="outline-container-sec-1-2" class="outline-3">
-<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Research and development</h3>
-<div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-sec-1-2-1" class="outline-4">
-<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> Solve Ericsson's software problem</h4>
-<div class="outline-text-4" id="text-1-2-1">
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Research and development</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Solve Ericsson's software problem</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Bjarne, Joe recounts that your marching orders to him were to "solve
 Ericsson's software problem". Could you describe some of those
@@ -260,9 +254,9 @@ might actually pull it off?
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-2" class="outline-4">
-<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> JAM</h4>
-<div class="outline-text-4" id="text-1-2-2">
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> JAM</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>Joe, Chuck Moore, creator of Forth, said that "compilers are
 probably the worst code ever written. They are written by someone
@@ -280,9 +274,9 @@ they have it in them to create something new?
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-3" class="outline-4">
-<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> Virdings first rule of programming</h4>
-<div class="outline-text-4" id="text-1-2-3">
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Virdings first rule of programming</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>Robert, are you familiar with this "Virding's first rule of
 programming?"
@@ -302,9 +296,9 @@ record, what makes concurrency so hard?
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-4" class="outline-4">
-<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> A type system</h4>
-<div class="outline-text-4" id="text-1-2-4">
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> A type system</h3>
+<div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>Philip Wadler enters the ecosystem and works on a type system for
 Erlang. By some measure he fails, but does succeed in creating a
@@ -323,9 +317,9 @@ say at times that you're not a type person.
 </div>
 </div>
 
-<div id="outline-container-sec-1-2-5" class="outline-4">
-<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> Features that never made it</h4>
-<div class="outline-text-4" id="text-1-2-5">
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Features that never made it</h3>
+<div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
 <li>Joe, Mike, and Robert, in the history of Erlang you experimented
 with new features and users didn't like it, you pulled it. Were
@@ -337,13 +331,12 @@ it into Erlang because some <i>user</i>?
 </div>
 </div>
 
-
-<div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Erlang in the wild</h3>
-<div class="outline-text-3" id="text-1-3">
-</div><div id="outline-container-sec-1-3-1" class="outline-4">
-<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> Open sourcing Erlang</h4>
-<div class="outline-text-4" id="text-1-3-1">
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Erlang in the wild</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Open sourcing Erlang</h3>
+<div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>Jane, if it wasn't for your involvement in getting Erlang open
 sources, we wouldn't be here today. Could you tell us that story?
@@ -358,9 +351,9 @@ posibility that Erlang would have been kept closed?
 </div>
 </div>
 
-<div id="outline-container-sec-1-3-2" class="outline-4">
-<h4 id="sec-1-3-2"><span class="section-number-4">1.3.2</span> Difficulty of selling Erlang</h4>
-<div class="outline-text-4" id="text-1-3-2">
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Difficulty of selling Erlang</h3>
+<div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Jane you bring a perspective that is hard to come by in Erlang
 developer circles as you have interface with those who are seeing
@@ -373,9 +366,9 @@ discussions?
 </div>
 </div>
 
-<div id="outline-container-sec-1-3-3" class="outline-4">
-<h4 id="sec-1-3-3"><span class="section-number-4">1.3.3</span> Mission accomplished?</h4>
-<div class="outline-text-4" id="text-1-3-3">
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Mission accomplished?</h3>
+<div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>Here's a short list of some companies - you may have heard of some:
 IBM, VISA, Facebook, BT Mobile, Pivotal, WhatsApp - and a telecom
@@ -433,9 +426,9 @@ is used, inside Ericsson and outside, are you all comfortable saying
 </div>
 </div>
 
-<div id="outline-container-sec-1-3-4" class="outline-4">
-<h4 id="sec-1-3-4"><span class="section-number-4">1.3.4</span> Elixir</h4>
-<div class="outline-text-4" id="text-1-3-4">
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Elixir</h3>
+<div class="outline-text-3" id="text-4-4">
 <ul class="org-ul">
 <li>Elixir&#x2026; This is a new language, similar to Erlang semantically but
 with some novel innovations like macros and function call
@@ -467,41 +460,12 @@ which is still largely driven by a single organization.
 </div>
 </div>
 
-
-<div id="outline-container-sec-1-4" class="outline-3">
-<h3 id="sec-1-4"><span class="section-number-3">1.4</span> The future</h3>
-<div class="outline-text-3" id="text-1-4">
-</div><div id="outline-container-sec-1-4-1" class="outline-4">
-<h4 id="sec-1-4-1"><span class="section-number-4">1.4.1</span> The only people in the world concerned with software failure</h4>
-<div class="outline-text-4" id="text-1-4-1">
-<ul class="org-ul">
-<li>Joe, Robert and Mike, in 1989 at the SETSS conference you trolled
-other presenters relentlessly by asking the question, "what happens
-if it fails?" The answer was "our model assumes it won't". After
-this you realized that you were the only people in the world
-designing systems that could recover from software failures.
-
-<p>
-It seems not much has changed. Today, systems are built to guard
-against hardware failures.
-</p>
-
-<p>
-This seems to me the dividing line between Erlang and everything
-else, even today.
-</p>
-
-<p>
-My question is this, why hasn't this idea caught on?
-</p>
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-1-4-2" class="outline-4">
-<h4 id="sec-1-4-2"><span class="section-number-4">1.4.2</span> What's exciting</h4>
-<div class="outline-text-4" id="text-1-4-2">
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> The future</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> What's exciting</h3>
+<div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>Looking at technology today, what's most exciting to you?
 </li>
@@ -509,9 +473,9 @@ My question is this, why hasn't this idea caught on?
 </div>
 </div>
 
-<div id="outline-container-sec-1-4-3" class="outline-4">
-<h4 id="sec-1-4-3"><span class="section-number-4">1.4.3</span> Advice to learners</h4>
-<div class="outline-text-4" id="text-1-4-3">
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Advice to learners</h3>
+<div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li>Advice for a new programmer who wants to work on actual hard
 problems and be excellent at it.
@@ -521,10 +485,9 @@ problems and be excellent at it.
 </div>
 </div>
 </div>
-</div>
 <div id="postamble" class="status">
 <p class="author">Author: Garrett Smith</p>
-<p class="date">Created: 2016-09-08 Thu 13:59</p>
+<p class="date">Created: 2016-09-08 Thu 16:25</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
