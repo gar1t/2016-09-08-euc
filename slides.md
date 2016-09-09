@@ -18,6 +18,8 @@ td {
 }
 </style>
 
+# The Deep Revolution
+
 ---
 
 <img src="alpha-go.jpg">
@@ -89,6 +91,15 @@ Press, 2015
 
 ---
 
+## Backpropagation
+
+- Efficiently calculate gradient of the cost function
+- Introdued in 1970s, applied to network training in 1986
+- Calculates partial derrivatives of cost wrt weights
+- No, you didn't need to know that
+
+---
+
 ### TensorFlow Playground
 
 <img src="playground.png">
@@ -105,9 +116,14 @@ Press, 2015
 - GoogLeNet/Inception in 2014 - 22 layers
 - VGGNet in 2014 - 16/19 layers
 - ResNet in 2015 - 50/101/152 layers
-- ??? on September 16, 2016 - > ??? layers
+- ??? on September 16, 2016 - ??? layers
 
 ---
+
+# Computational Requirements
+
+---
+
 
 ## Alpha Go Hardware
 
@@ -119,6 +135,39 @@ Press, 2015
 ---
 
 <img src="gpu.jpg" height="600">
+
+---
+
+## CUDA and cuDNN
+
+- APIs and libraries for programming Nvidia's GPUs
+- Juggernaut in Deep Learning
+- All major deep learning frameworks target CUDA/cuDNN
+
+---
+
+### CUDA Kernels
+
+<img src="cuda-1.png" height="600">
+
+[http://geco.mines.edu/tesla/cuda_tutorial_mio/](http://geco.mines.edu/tesla/cuda_tutorial_mio/)
+
+---
+
+### CUDA Kernels
+
+<img src="cuda-2.png" height="600">
+
+[http://geco.mines.edu/tesla/cuda_tutorial_mio/](http://geco.mines.edu/tesla/cuda_tutorial_mio/)
+
+---
+
+### Optimizing GPU Performance
+
+<img src="maxas.jpg">
+
+<a href="http://on-demand.gputechconf.com/gtc/2015/presentation/S5873-Amir-Khosrowshahi.pdf">E.g. OPTIMIZED GPU KERNELS
+FOR DEEP LEARNING</a>
 
 ---
 
@@ -136,36 +185,11 @@ Press, 2015
 <tr><td>PaddlePaddle</td><td>2,875</td><td>-</td></tr>
 </table>
 
-Data as of September 9, 2016
+As of September 9, 2016
 
 ---
 
-# CUDA
-
----
-
-<img src="cuda-1.png" height="600">
-
----
-
-<img src="cuda-2.png" height="600">
-
----
-
-### Optimizing GPU Performance
-
-<img src="maxas.jpg">
-
-<a href="http://on-demand.gputechconf.com/gtc/2015/presentation/S5873-Amir-Khosrowshahi.pdf">E.g. OPTIMIZED GPU KERNELS
-FOR DEEP LEARNING</a>
-
----
-
-# OpenCL
-
-- Bindings by Tony Rogvall<br><small>[https://github.com/tonyrog/cl](https://github.com/tonyrog/cl)</small>
-- Relatively weak support in Deep Learning Frameworks
-- Even if supported, no DL ecosystem in Erlang to drive development
+# Erlang and Deep Learning
 
 ---
 
@@ -177,7 +201,17 @@ FOR DEEP LEARNING</a>
 
 ---
 
-## Erlang and Deep Learning?
+### Erlang's Weaknesses
+
+- It's not C
+- It's not C++
+- It's not Python
+- It has no CUDA story whatsoever
+- It has a weak OpenCL story and even that doesn't matter
+
+---
+
+## Erlang can be used in Deep Learning
 
 - Client-side control systems
 - Server-side support tools
@@ -186,7 +220,7 @@ FOR DEEP LEARNING</a>
 
 ---
 
-## Inspiration
+### Projects to take inspiration from
 
 - Distributed TensorFlow (distributed training)
 - TensorFlow Serving (inference)
@@ -252,25 +286,3 @@ FOR DEEP LEARNING</a>
 # Questions
 
 <p>@gar1t on Twitter</p>
-
---------
-
-- What's deep learning?
-
-- Why do I care?
-
-  - AlphaGo
-  - Google car
-  -
-
-- How deep learning is done
-
-  - Models
-  - Data
-  - Training
-  - Application
-
-- Nvidia
-- CUDA
-- CUDA Kernel
-- Nirvana's work on optimizing CUDA kernels
